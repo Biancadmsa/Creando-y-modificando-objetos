@@ -1,7 +1,7 @@
 
 function Consultorio(nombre, pacientes) {
   this.nombre = nombre;
-  this.pacientes = pacientes || [];
+  this.pacientes = pacientes;
 }
  Consultorio.prototype.getNombre = function() {
     return this.nombre;
@@ -78,8 +78,8 @@ Paciente. prototype.setDiagnostico = function(nuevoDiagnostico){
 
 
 
-var pacienteUno = new Paciente('Piero', 32, '15453256-5', 'Hipocondriaco 🤪');
-var pacienteDos = new Paciente('DoRodrigo', 43, '15453256-5', 'Céfalea');
+var pacienteUno = new Paciente('Piero', 32, '15453256-5', 'Hipocondriaco');
+var pacienteDos = new Paciente('DoRodrigo', 43, '15423256-5', 'Céfalea');
 var pacienteTres = new Paciente('Bianca', 40, '12345678-9', 'Estres');
 var consultorio = new Consultorio('Consultorio Médico La Serena', [pacienteUno, pacienteDos, pacienteTres]);
 
